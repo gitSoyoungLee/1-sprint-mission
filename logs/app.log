@@ -1,0 +1,876 @@
+16:40:45.844 INFO  [Test worker] c.s.mission.discodeit.ChannelTest [  |  |
+         ] - Starting ChannelTest using Java 17.0.11 with PID 32888 (started by soo71 in C:\Users\soo71\github\1-sprint-mission)
+16:40:45.861 INFO  [Test worker] c.s.mission.discodeit.ChannelTest [  |  |
+         ] - The following 1 profile is active: "test"
+16:40:45.888 INFO  [background-preinit] o.h.validator.internal.util.Version [  |  |
+         ] - HV000001: Hibernate Validator 8.0.1.Final
+16:40:51.418 INFO  [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate [  |  |
+         ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:40:51.902 INFO  [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate [  |  |
+         ] - Finished Spring Data repository scanning in 444 ms. Found 6 JPA repository interfaces.
+16:40:55.333 INFO  [Test worker] o.s.b.w.e.tomcat.TomcatWebServer [  |  |
+         ] - Tomcat initialized with port 0 (http)
+16:40:55.375 INFO  [Test worker] o.a.coyote.http11.Http11NioProtocol [  |  |
+         ] - Initializing ProtocolHandler ["http-nio-auto-1"]
+16:40:55.382 INFO  [Test worker] o.a.catalina.core.StandardService [  |  |
+         ] - Starting service [Tomcat]
+16:40:55.383 INFO  [Test worker] o.a.catalina.core.StandardEngine [  |  |
+         ] - Starting Servlet engine: [Apache Tomcat/10.1.33]
+16:40:55.746 INFO  [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/] [  |  |
+         ] - Initializing Spring embedded WebApplicationContext
+16:40:55.750 INFO  [Test worker] o.s.b.w.s.c.ServletWebServerApplicationContext [  |  |
+         ] - Root WebApplicationContext: initialization completed in 9790 ms
+16:40:56.404 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource [  |  |
+         ] - HikariPool-1 - Starting...
+16:40:57.802 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool [  |  |
+         ] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+16:40:57.820 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource [  |  |
+         ] - HikariPool-1 - Start completed.
+16:40:57.861 INFO  [Test worker] o.s.b.a.h.H2ConsoleAutoConfiguration [  |  |
+         ] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+16:40:58.926 INFO  [Test worker] o.h.jpa.internal.util.LogHelper [  |  |
+         ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:40:59.344 INFO  [Test worker] org.hibernate.Version [  |  |
+         ] - HHH000412: Hibernate ORM core version 6.6.2.Final
+16:40:59.541 INFO  [Test worker] o.h.c.i.RegionFactoryInitiator [  |  |
+         ] - HHH000026: Second-level cache disabled
+16:41:01.095 INFO  [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo [  |  |
+         ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+16:41:01.384 WARN  [Test worker] org.hibernate.dialect.Dialect [  |  |
+         ] - HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+16:41:01.410 WARN  [Test worker] org.hibernate.orm.deprecation [  |  |
+         ] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:41:01.504 INFO  [Test worker] o.hibernate.orm.connections.pooling [  |  |
+         ] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+16:41:07.278 INFO  [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator [  |  |
+         ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:41:07.297 INFO  [Test worker] o.s.o.j.LocalContainerEntityManagerFactoryBean [  |  |
+         ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:41:08.673 INFO  [Test worker] o.s.d.j.r.query.QueryEnhancerFactory [  |  |
+         ] - Hibernate is in classpath; If applicable, HQL parser will be used.
+16:41:13.044 INFO  [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping [  |  |
+         ] - Adding welcome page: class path resource [static/index.html]
+16:41:16.880 INFO  [Test worker] o.s.b.a.e.web.EndpointLinksResolver [  |  |
+         ] - Exposing 4 endpoints beneath base path '/actuator'
+16:41:17.425 INFO  [Test worker] o.a.coyote.http11.Http11NioProtocol [  |  |
+         ] - Starting ProtocolHandler ["http-nio-auto-1"]
+16:41:17.472 INFO  [Test worker] o.s.b.w.e.tomcat.TomcatWebServer [  |  |
+         ] - Tomcat started on port 4222 (http) with context path '/'
+16:41:17.509 INFO  [Test worker] c.s.mission.discodeit.ChannelTest [  |  |
+         ] - Started ChannelTest in 34.291 seconds (process running for 41.489)
+16:41:19.716 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [  |  |
+         ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:41:19.717 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet [  |  |
+         ] - Initializing Servlet 'dispatcherServlet'
+16:41:19.720 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet [  |  |
+         ] - Completed initialization in 2 ms
+16:41:19.879 INFO  [http-nio-auto-1-exec-1] c.s.m.d.controller.ChannelController [ 5b8994c9-c779-4e16-af25-7fd9e3773ffd | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111222 ] - [Deleting Channel started / id: 11111111-1111-1111-1111-111111111222]
+16:41:20.012 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 5b8994c9-c779-4e16-af25-7fd9e3773ffd | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111222 ] - select c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at from channels c1_0 where c1_0.id=?
+16:41:20.032 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 5b8994c9-c779-4e16-af25-7fd9e3773ffd | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111222 ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111222]
+16:41:20.203 WARN  [http-nio-auto-1-exec-1] c.s.m.d.s.basic.BasicChannelService [ 5b8994c9-c779-4e16-af25-7fd9e3773ffd | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111222 ] - [Deleting Channel Failed: Channel with id 11111111-1111-1111-1111-111111111222 not found]
+16:41:20.843 INFO  [http-nio-auto-1-exec-2] c.s.m.d.controller.ChannelController [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - [Creating Public Chanel started]
+16:41:21.168 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - select m1_0.id,m1_0.author_id,m1_0.channel_id,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 where m1_0.channel_id=?
+16:41:21.169 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - binding parameter (1:UUID) <- [67764c93-9a7f-4833-9c71-745060dd3210]
+16:41:21.217 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - insert into channels (created_at,description,name,type,updated_at,id) values (?,?,?,?,?,?)
+16:41:21.225 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - binding parameter (1:TIMESTAMP_UTC) <- [2025-04-15T07:41:20.933387900Z]
+16:41:21.228 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - binding parameter (2:VARCHAR) <- [this is ch 1]
+16:41:21.229 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - binding parameter (3:VARCHAR) <- [ch 1]
+16:41:21.230 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - binding parameter (4:NAMED_ENUM) <- [PUBLIC]
+16:41:21.232 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:20.933387900Z]
+16:41:21.234 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - binding parameter (6:UUID) <- [67764c93-9a7f-4833-9c71-745060dd3210]
+16:41:21.241 INFO  [http-nio-auto-1-exec-2] c.s.m.d.controller.ChannelController [ b2bbc019-5801-4101-91f4-b1a5ff217b33 | POST |
+        /api/channels/public ] - [Public Channel Created / id: 67764c93-9a7f-4833-9c71-745060dd3210]
+16:41:21.289 INFO  [http-nio-auto-1-exec-3] c.s.m.d.controller.ChannelController [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - [Updating Public Channel started / id: 11111111-1111-1111-1111-111111111111]
+16:41:21.291 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - select c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at from channels c1_0 where c1_0.id=?
+16:41:21.292 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111111]
+16:41:21.319 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - select m1_0.id,m1_0.author_id,m1_0.channel_id,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 where m1_0.channel_id=?
+16:41:21.320 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111111]
+16:41:21.330 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - update channels set description=?,name=?,type=?,updated_at=? where id=?
+16:41:21.341 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (1:VARCHAR) <- [new description]
+16:41:21.341 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (2:VARCHAR) <- [new ch 1]
+16:41:21.341 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (3:NAMED_ENUM) <- [PUBLIC]
+16:41:21.342 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.323063800Z]
+16:41:21.342 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (5:UUID) <- [11111111-1111-1111-1111-111111111111]
+16:41:21.349 INFO  [http-nio-auto-1-exec-3] c.s.m.d.controller.ChannelController [ 565394cc-12b4-429c-89ea-97c9e01ccadf | PATCH |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - [Channel Updated / id: 11111111-1111-1111-1111-111111111111]
+16:41:21.374 INFO  [http-nio-auto-1-exec-4] c.s.m.d.controller.ChannelController [ 75638be7-bfe3-41ca-b28f-15a762b6ec05 | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - [Deleting Channel started / id: 11111111-1111-1111-1111-111111111111]
+16:41:21.376 DEBUG [http-nio-auto-1-exec-4] org.hibernate.SQL [ 75638be7-bfe3-41ca-b28f-15a762b6ec05 | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - select c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at from channels c1_0 where c1_0.id=?
+16:41:21.376 TRACE [http-nio-auto-1-exec-4] org.hibernate.orm.jdbc.bind [ 75638be7-bfe3-41ca-b28f-15a762b6ec05 | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111111]
+16:41:21.391 DEBUG [http-nio-auto-1-exec-4] org.hibernate.SQL [ 75638be7-bfe3-41ca-b28f-15a762b6ec05 | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - delete from channels where id=?
+16:41:21.391 TRACE [http-nio-auto-1-exec-4] org.hibernate.orm.jdbc.bind [ 75638be7-bfe3-41ca-b28f-15a762b6ec05 | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111111]
+16:41:21.399 INFO  [http-nio-auto-1-exec-4] c.s.m.d.controller.ChannelController [ 75638be7-bfe3-41ca-b28f-15a762b6ec05 | DELETE |
+        /api/channels/11111111-1111-1111-1111-111111111111 ] - [Channel Deleted / id: 11111111-1111-1111-1111-111111111111]
+16:41:21.446 INFO  [http-nio-auto-1-exec-5] c.s.m.d.controller.ChannelController [ 80d1b418-02ce-44ba-89fb-e2bc03d32f89 | POST |
+        /api/channels/private ] - [Creating Private Channel started]
+16:41:21.460 DEBUG [http-nio-auto-1-exec-5] org.hibernate.SQL [ 80d1b418-02ce-44ba-89fb-e2bc03d32f89 | POST |
+        /api/channels/private ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:21.466 TRACE [http-nio-auto-1-exec-5] org.hibernate.orm.jdbc.bind [ 80d1b418-02ce-44ba-89fb-e2bc03d32f89 | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000111101]
+16:41:21.474 WARN  [http-nio-auto-1-exec-5] c.s.m.d.s.b.BasicReadStatusService [ 80d1b418-02ce-44ba-89fb-e2bc03d32f89 | POST |
+        /api/channels/private ] - [Creating ReadStatus Failed: User with id 00000000-0000-0000-0000-000000111101 not found]
+16:41:21.500 INFO  [http-nio-auto-1-exec-6] c.s.m.d.controller.ChannelController [ e67bd3f1-1530-41f6-810b-5345a0a5ca40 | PATCH |
+        /api/channels/abd2524c-4990-45cd-bd7c-5c5aa7112678 ] - [Updating Public Channel started / id: abd2524c-4990-45cd-bd7c-5c5aa7112678]
+16:41:21.503 DEBUG [http-nio-auto-1-exec-6] org.hibernate.SQL [ e67bd3f1-1530-41f6-810b-5345a0a5ca40 | PATCH |
+        /api/channels/abd2524c-4990-45cd-bd7c-5c5aa7112678 ] - select c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at from channels c1_0 where c1_0.id=?
+16:41:21.504 TRACE [http-nio-auto-1-exec-6] org.hibernate.orm.jdbc.bind [ e67bd3f1-1530-41f6-810b-5345a0a5ca40 | PATCH |
+        /api/channels/abd2524c-4990-45cd-bd7c-5c5aa7112678 ] - binding parameter (1:UUID) <- [abd2524c-4990-45cd-bd7c-5c5aa7112678]
+16:41:21.505 WARN  [http-nio-auto-1-exec-6] c.s.m.d.s.basic.BasicChannelService [ e67bd3f1-1530-41f6-810b-5345a0a5ca40 | PATCH |
+        /api/channels/abd2524c-4990-45cd-bd7c-5c5aa7112678 ] - [Updating Channel Failed: Channel with id abd2524c-4990-45cd-bd7c-5c5aa7112678 not found]
+16:41:21.610 INFO  [http-nio-auto-1-exec-9] c.s.m.d.controller.ChannelController [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - [Creating Private Channel started]
+16:41:21.616 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:21.619 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000103]
+16:41:21.650 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - select rs1_0.id from read_statuses rs1_0 where rs1_0.user_id=? and rs1_0.channel_id=? fetch first ? rows only
+16:41:21.652 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000103]
+16:41:21.653 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (2:UUID) <- [87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.653 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (3:INTEGER) <- [1]
+16:41:21.669 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:21.670 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000104]
+16:41:21.677 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - insert into channels (created_at,description,name,type,updated_at,id) values (?,?,?,?,?,?)
+16:41:21.680 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.613331600Z]
+16:41:21.680 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (2:VARCHAR) <- [null]
+16:41:21.681 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (3:VARCHAR) <- [null]
+16:41:21.681 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (4:NAMED_ENUM) <- [PRIVATE]
+16:41:21.682 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.613331600Z]
+16:41:21.682 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (6:UUID) <- [87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.683 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - insert into read_statuses (channel_id,created_at,last_read_at,updated_at,user_id,id) values (?,?,?,?,?,?)
+16:41:21.684 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.684 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (2:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.663275200Z]
+16:41:21.685 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (3:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.613331600Z]
+16:41:21.685 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.663275200Z]
+16:41:21.685 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (5:UUID) <- [00000000-0000-0000-0000-000000000103]
+16:41:21.686 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (6:UUID) <- [01944d09-8bc6-475f-aa27-f5137eec4d59]
+16:41:21.687 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - select rs1_0.id from read_statuses rs1_0 where rs1_0.user_id=? and rs1_0.channel_id=? fetch first ? rows only
+16:41:21.688 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000104]
+16:41:21.688 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (2:UUID) <- [87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.689 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (3:INTEGER) <- [1]
+16:41:21.698 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - insert into read_statuses (channel_id,created_at,last_read_at,updated_at,user_id,id) values (?,?,?,?,?,?)
+16:41:21.699 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.699 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (2:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.691445300Z]
+16:41:21.699 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (3:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.613331600Z]
+16:41:21.700 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:21.691445300Z]
+16:41:21.700 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (5:UUID) <- [00000000-0000-0000-0000-000000000104]
+16:41:21.701 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (6:UUID) <- [de1ae484-ac92-4aa0-9cf0-46a811b4af5a]
+16:41:21.702 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - select rs1_0.id,rs1_0.channel_id,rs1_0.created_at,rs1_0.last_read_at,rs1_0.updated_at,rs1_0.user_id from read_statuses rs1_0 where rs1_0.channel_id=?
+16:41:21.703 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.712 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - select m1_0.id,m1_0.author_id,m1_0.channel_id,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 where m1_0.channel_id=?
+16:41:21.713 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - binding parameter (1:UUID) <- [87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.716 INFO  [http-nio-auto-1-exec-9] c.s.m.d.controller.ChannelController [ d04b97be-0b79-4ebb-b251-3860d2c2308e | POST |
+        /api/channels/private ] - [Private Channel Created / id: 87d3b6c5-1cb7-4fd9-8d96-165fcaca180a]
+16:41:21.748 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.MessageTest]: MessageTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:21.754 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.MessageTest
+16:41:21.942 DEBUG [http-nio-auto-1-exec-8] org.hibernate.SQL [ f4b4b6db-d2dd-4df6-bfd2-4b255d9aee4a | GET |
+        /api/messages ] - select count(*) from channels c1_0 where c1_0.id=?
+16:41:21.947 TRACE [http-nio-auto-1-exec-8] org.hibernate.orm.jdbc.bind [ f4b4b6db-d2dd-4df6-bfd2-4b255d9aee4a | GET |
+        /api/messages ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111112]
+16:41:22.012 WARN  [http-nio-auto-1-exec-8] org.hibernate.orm.query [ f4b4b6db-d2dd-4df6-bfd2-4b255d9aee4a | GET |
+        /api/messages ] - HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+16:41:22.039 DEBUG [http-nio-auto-1-exec-8] org.hibernate.SQL [ f4b4b6db-d2dd-4df6-bfd2-4b255d9aee4a | GET |
+        /api/messages ] - select m1_0.id,a2_0.message_id,a2_1.id,a2_1.content_type,a2_1.created_at,a2_1.file_name,a2_1.size,a1_0.id,a1_0.created_at,a1_0.email,a1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,a1_0.updated_at,a1_0.username,c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 left join users a1_0 on a1_0.id=m1_0.author_id left join user_statuses s1_0 on a1_0.id=s1_0.user_id left join binary_contents p1_0 on p1_0.id=a1_0.profile_id join channels c1_0 on c1_0.id=m1_0.channel_id left join message_attachments a2_0 on m1_0.id=a2_0.message_id left join binary_contents a2_1 on a2_1.id=a2_0.attachment_id where m1_0.channel_id=? order by m1_0.created_at desc
+16:41:22.041 TRACE [http-nio-auto-1-exec-8] org.hibernate.orm.jdbc.bind [ f4b4b6db-d2dd-4df6-bfd2-4b255d9aee4a | GET |
+        /api/messages ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111112]
+16:41:22.205 INFO  [http-nio-auto-1-exec-10] c.s.m.d.controller.MessageController [ ab269454-16cb-4d8c-81df-060a0dc02b01 | PATCH |
+        /api/messages/22222222-0000-2222-2222-222222222222 ] - [Updating message / id: 22222222-0000-2222-2222-222222222222]
+16:41:22.208 DEBUG [http-nio-auto-1-exec-10] org.hibernate.SQL [ ab269454-16cb-4d8c-81df-060a0dc02b01 | PATCH |
+        /api/messages/22222222-0000-2222-2222-222222222222 ] - select m1_0.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,a1_0.updated_at,a1_0.username,c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 left join users a1_0 on a1_0.id=m1_0.author_id left join binary_contents p1_0 on p1_0.id=a1_0.profile_id left join user_statuses s1_0 on a1_0.id=s1_0.user_id left join channels c1_0 on c1_0.id=m1_0.channel_id where m1_0.id=?
+16:41:22.210 TRACE [http-nio-auto-1-exec-10] org.hibernate.orm.jdbc.bind [ ab269454-16cb-4d8c-81df-060a0dc02b01 | PATCH |
+        /api/messages/22222222-0000-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [22222222-0000-2222-2222-222222222222]
+16:41:22.214 WARN  [http-nio-auto-1-exec-10] c.s.m.d.s.basic.BasicMessageService [ ab269454-16cb-4d8c-81df-060a0dc02b01 | PATCH |
+        /api/messages/22222222-0000-2222-2222-222222222222 ] - [Updating Message Failed: Message with id 22222222-0000-2222-2222-222222222222 not found]
+16:41:22.263 INFO  [http-nio-auto-1-exec-1] c.s.m.d.controller.MessageController [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - [Updating message / id: 22222222-2222-2222-2222-222222222222]
+16:41:22.265 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - select m1_0.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,a1_0.updated_at,a1_0.username,c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 left join users a1_0 on a1_0.id=m1_0.author_id left join binary_contents p1_0 on p1_0.id=a1_0.profile_id left join user_statuses s1_0 on a1_0.id=s1_0.user_id left join channels c1_0 on c1_0.id=m1_0.channel_id where m1_0.id=?
+16:41:22.267 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [22222222-2222-2222-2222-222222222222]
+16:41:22.285 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - select a1_0.message_id,a1_1.id,a1_1.content_type,a1_1.created_at,a1_1.file_name,a1_1.size from message_attachments a1_0 join binary_contents a1_1 on a1_1.id=a1_0.attachment_id where a1_0.message_id=?
+16:41:22.290 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [22222222-2222-2222-2222-222222222222]
+16:41:22.329 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - update messages set author_id=?,channel_id=?,content=?,updated_at=? where id=?
+16:41:22.330 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:22.331 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (2:UUID) <- [11111111-1111-1111-1111-111111111112]
+16:41:22.331 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (3:VARCHAR) <- [new Content]
+16:41:22.331 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:22.320832800Z]
+16:41:22.332 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (5:UUID) <- [22222222-2222-2222-2222-222222222222]
+16:41:22.334 INFO  [http-nio-auto-1-exec-1] c.s.m.d.controller.MessageController [ 54e9ab09-db54-4245-9e7c-c174c69b7bfb | PATCH |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - [Message Updated / id: 22222222-2222-2222-2222-222222222222]
+16:41:22.505 INFO  [http-nio-auto-1-exec-2] c.s.m.d.controller.MessageController [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - [Creating Message started]
+16:41:22.509 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:22.511 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:22.515 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - select c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at from channels c1_0 where c1_0.id=?
+16:41:22.517 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (1:UUID) <- [11111111-1111-1111-1111-111111111112]
+16:41:22.535 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - select count(*) from users u1_0 where u1_0.id=?
+16:41:22.535 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:22.544 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - select us1_0.id,us1_0.created_at,us1_0.last_active_at,us1_0.updated_at,us1_0.user_id from user_statuses us1_0 where us1_0.user_id=?
+16:41:22.545 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:22.574 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:22.575 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:22.576 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (2:UUID) <- [11111111-1111-1111-1111-111111111112]
+16:41:22.576 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (3:VARCHAR) <- [content]
+16:41:22.577 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:22.522580300Z]
+16:41:22.577 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:22.522580300Z]
+16:41:22.578 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (6:UUID) <- [975ff3c7-38fb-453a-b7eb-dc09ea67c6be]
+16:41:22.580 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - update user_statuses set last_active_at=?,updated_at=?,user_id=? where id=?
+16:41:22.580 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (1:TIMESTAMP_UTC) <- [2025-04-15T07:41:22.523593200Z]
+16:41:22.581 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (2:TIMESTAMP_UTC) <- [2025-04-15T07:41:22.571662700Z]
+16:41:22.581 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (3:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:22.581 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - binding parameter (4:UUID) <- [00000000-0000-0000-0000-000000001001]
+16:41:22.594 INFO  [http-nio-auto-1-exec-2] c.s.m.d.controller.MessageController [ 5d414602-ea8f-436a-b2bd-66221e92a38c | POST |
+        /api/messages ] - [Message Created / id:975ff3c7-38fb-453a-b7eb-dc09ea67c6be]
+16:41:22.617 INFO  [http-nio-auto-1-exec-3] c.s.m.d.controller.MessageController [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - [Deleting Message / id: 22222222-2222-2222-2222-222222222222]
+16:41:22.619 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - select m1_0.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,a1_0.updated_at,a1_0.username,c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 left join users a1_0 on a1_0.id=m1_0.author_id left join binary_contents p1_0 on p1_0.id=a1_0.profile_id left join user_statuses s1_0 on a1_0.id=s1_0.user_id left join channels c1_0 on c1_0.id=m1_0.channel_id where m1_0.id=?
+16:41:22.621 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [22222222-2222-2222-2222-222222222222]
+16:41:22.624 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - select m1_0.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,a1_0.updated_at,a1_0.username,c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 left join users a1_0 on a1_0.id=m1_0.author_id left join binary_contents p1_0 on p1_0.id=a1_0.profile_id left join user_statuses s1_0 on a1_0.id=s1_0.user_id left join channels c1_0 on c1_0.id=m1_0.channel_id where m1_0.id=?
+16:41:22.626 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [22222222-2222-2222-2222-222222222222]
+16:41:22.639 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - select a1_0.message_id,a1_1.id,a1_1.content_type,a1_1.created_at,a1_1.file_name,a1_1.size from message_attachments a1_0 join binary_contents a1_1 on a1_1.id=a1_0.attachment_id where a1_0.message_id=?
+16:41:22.641 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [22222222-2222-2222-2222-222222222222]
+16:41:22.652 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - delete from messages where id=?
+16:41:22.652 TRACE [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - binding parameter (1:UUID) <- [22222222-2222-2222-2222-222222222222]
+16:41:22.654 INFO  [http-nio-auto-1-exec-3] c.s.m.d.controller.MessageController [ 6300689b-32b2-4115-92a4-0125f1420163 | DELETE |
+        /api/messages/22222222-2222-2222-2222-222222222222 ] - [Message Deleted / id:22222222-2222-2222-2222-222222222222]
+16:41:22.699 INFO  [http-nio-auto-1-exec-4] c.s.m.d.controller.MessageController [ 708b58f4-6df0-41fa-b339-732330721ecd | DELETE |
+        /api/messages/d22cfc94-6c33-4798-9aa7-5eecf5a813a3 ] - [Deleting Message / id: d22cfc94-6c33-4798-9aa7-5eecf5a813a3]
+16:41:22.700 DEBUG [http-nio-auto-1-exec-4] org.hibernate.SQL [ 708b58f4-6df0-41fa-b339-732330721ecd | DELETE |
+        /api/messages/d22cfc94-6c33-4798-9aa7-5eecf5a813a3 ] - select m1_0.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,a1_0.updated_at,a1_0.username,c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 left join users a1_0 on a1_0.id=m1_0.author_id left join binary_contents p1_0 on p1_0.id=a1_0.profile_id left join user_statuses s1_0 on a1_0.id=s1_0.user_id left join channels c1_0 on c1_0.id=m1_0.channel_id where m1_0.id=?
+16:41:22.702 TRACE [http-nio-auto-1-exec-4] org.hibernate.orm.jdbc.bind [ 708b58f4-6df0-41fa-b339-732330721ecd | DELETE |
+        /api/messages/d22cfc94-6c33-4798-9aa7-5eecf5a813a3 ] - binding parameter (1:UUID) <- [d22cfc94-6c33-4798-9aa7-5eecf5a813a3]
+16:41:22.704 WARN  [http-nio-auto-1-exec-4] c.s.m.d.s.basic.BasicMessageService [ 708b58f4-6df0-41fa-b339-732330721ecd | DELETE |
+        /api/messages/d22cfc94-6c33-4798-9aa7-5eecf5a813a3 ] - [Deleting Message Failed: Message with id d22cfc94-6c33-4798-9aa7-5eecf5a813a3 not found]
+16:41:22.745 INFO  [http-nio-auto-1-exec-5] c.s.m.d.controller.MessageController [ dd00dd56-a0c4-415d-aeb3-ebbdec8983ea | POST |
+        /api/messages ] - [Creating Message started]
+16:41:22.747 DEBUG [http-nio-auto-1-exec-5] org.hibernate.SQL [ dd00dd56-a0c4-415d-aeb3-ebbdec8983ea | POST |
+        /api/messages ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:22.749 TRACE [http-nio-auto-1-exec-5] org.hibernate.orm.jdbc.bind [ dd00dd56-a0c4-415d-aeb3-ebbdec8983ea | POST |
+        /api/messages ] - binding parameter (1:UUID) <- [11100000-0000-0000-0000-000000000101]
+16:41:22.750 WARN  [http-nio-auto-1-exec-5] c.s.m.d.s.basic.BasicMessageService [ dd00dd56-a0c4-415d-aeb3-ebbdec8983ea | POST |
+        /api/messages ] - [Creating Message Failed: User with id 11100000-0000-0000-0000-000000000101 not found]
+16:41:22.795 DEBUG [http-nio-auto-1-exec-6] org.hibernate.SQL [ 23a29dd0-210c-4020-add7-4ffab39a3c33 | GET |
+        /api/messages ] - select count(*) from channels c1_0 where c1_0.id=?
+16:41:22.796 TRACE [http-nio-auto-1-exec-6] org.hibernate.orm.jdbc.bind [ 23a29dd0-210c-4020-add7-4ffab39a3c33 | GET |
+        /api/messages ] - binding parameter (1:UUID) <- [e424dad9-af69-4bce-81d3-788fc9e80ea1]
+16:41:22.798 WARN  [http-nio-auto-1-exec-6] c.s.m.d.s.basic.BasicMessageService [ 23a29dd0-210c-4020-add7-4ffab39a3c33 | GET |
+        /api/messages ] - [Finding Messages Failed: Channel with id e424dad9-af69-4bce-81d3-788fc9e80ea1 not found]
+16:41:22.823 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:22.828 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.UserTest
+16:41:22.916 INFO  [http-nio-auto-1-exec-7] c.s.m.d.controller.UserController [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - [Updating User started / id: 00000000-0000-0000-0000-000000000102]
+16:41:22.918 DEBUG [http-nio-auto-1-exec-7] org.hibernate.SQL [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:22.919 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000102]
+16:41:22.935 DEBUG [http-nio-auto-1-exec-7] org.hibernate.SQL [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+16:41:22.937 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (1:VARCHAR) <- [updated@mail.com]
+16:41:22.937 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (2:INTEGER) <- [1]
+16:41:22.942 DEBUG [http-nio-auto-1-exec-7] org.hibernate.SQL [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - select u1_0.id from users u1_0 where u1_0.username=? fetch first ? rows only
+16:41:22.943 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (1:VARCHAR) <- [updatedName]
+16:41:22.944 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (2:INTEGER) <- [1]
+16:41:22.956 DEBUG [http-nio-auto-1-exec-7] org.hibernate.SQL [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - update users set email=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+16:41:22.957 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (1:VARCHAR) <- [updated@mail.com]
+16:41:22.957 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (2:VARCHAR) <- [newPassword]
+16:41:22.957 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (3:UUID) <- [00000000-0000-0000-0000-000000000002]
+16:41:22.958 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:22.955655200Z]
+16:41:22.964 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (5:VARCHAR) <- [updatedName]
+16:41:22.965 TRACE [http-nio-auto-1-exec-7] org.hibernate.orm.jdbc.bind [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - binding parameter (6:UUID) <- [00000000-0000-0000-0000-000000000102]
+16:41:22.967 INFO  [http-nio-auto-1-exec-7] c.s.m.d.controller.UserController [ f8c3d64b-8b2e-4c03-8a6b-69d146469465 | PATCH |
+        /api/users/00000000-0000-0000-0000-000000000102 ] - [User Updated / id: 00000000-0000-0000-0000-000000000102]
+16:41:23.021 INFO  [http-nio-auto-1-exec-9] c.s.m.d.controller.UserController [ 72188125-4b7e-4154-9dc4-8b2091bb0ac3 | PATCH |
+        /api/users/a2c2fde0-d3f7-428d-918c-65f4a6c0c181 ] - [Updating User started / id: a2c2fde0-d3f7-428d-918c-65f4a6c0c181]
+16:41:23.024 DEBUG [http-nio-auto-1-exec-9] org.hibernate.SQL [ 72188125-4b7e-4154-9dc4-8b2091bb0ac3 | PATCH |
+        /api/users/a2c2fde0-d3f7-428d-918c-65f4a6c0c181 ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:23.025 TRACE [http-nio-auto-1-exec-9] org.hibernate.orm.jdbc.bind [ 72188125-4b7e-4154-9dc4-8b2091bb0ac3 | PATCH |
+        /api/users/a2c2fde0-d3f7-428d-918c-65f4a6c0c181 ] - binding parameter (1:UUID) <- [a2c2fde0-d3f7-428d-918c-65f4a6c0c181]
+16:41:23.026 WARN  [http-nio-auto-1-exec-9] c.s.m.d.s.basic.BasicUserService [ 72188125-4b7e-4154-9dc4-8b2091bb0ac3 | PATCH |
+        /api/users/a2c2fde0-d3f7-428d-918c-65f4a6c0c181 ] - [Updating User Failed: User with id a2c2fde0-d3f7-428d-918c-65f4a6c0c181 not found]
+16:41:23.083 INFO  [http-nio-auto-1-exec-8] c.s.m.d.controller.UserController [ 42ae03d9-e1af-434b-87c7-77080141ba84 | POST |
+        /api/users ] - [Creating User started]
+16:41:23.087 DEBUG [http-nio-auto-1-exec-8] org.hibernate.SQL [ 42ae03d9-e1af-434b-87c7-77080141ba84 | POST |
+        /api/users ] - select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+16:41:23.089 TRACE [http-nio-auto-1-exec-8] org.hibernate.orm.jdbc.bind [ 42ae03d9-e1af-434b-87c7-77080141ba84 | POST |
+        /api/users ] - binding parameter (1:VARCHAR) <- [alice@mail.com]
+16:41:23.089 TRACE [http-nio-auto-1-exec-8] org.hibernate.orm.jdbc.bind [ 42ae03d9-e1af-434b-87c7-77080141ba84 | POST |
+        /api/users ] - binding parameter (2:INTEGER) <- [1]
+16:41:23.096 WARN  [http-nio-auto-1-exec-8] c.s.m.d.s.basic.BasicUserService [ 42ae03d9-e1af-434b-87c7-77080141ba84 | POST |
+        /api/users ] - [Creating User Failed: Email alice@mail.com already exists]
+16:41:23.133 INFO  [http-nio-auto-1-exec-10] c.s.m.d.controller.UserController [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - [Deleting User started / id: 00000000-0000-0000-0000-000000000101]
+16:41:23.134 DEBUG [http-nio-auto-1-exec-10] org.hibernate.SQL [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:23.135 TRACE [http-nio-auto-1-exec-10] org.hibernate.orm.jdbc.bind [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:23.142 DEBUG [http-nio-auto-1-exec-10] org.hibernate.SQL [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:23.143 TRACE [http-nio-auto-1-exec-10] org.hibernate.orm.jdbc.bind [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:23.149 DEBUG [http-nio-auto-1-exec-10] org.hibernate.SQL [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - delete from user_statuses where id=?
+16:41:23.149 TRACE [http-nio-auto-1-exec-10] org.hibernate.orm.jdbc.bind [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000001001]
+16:41:23.151 DEBUG [http-nio-auto-1-exec-10] org.hibernate.SQL [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - delete from users where id=?
+16:41:23.152 TRACE [http-nio-auto-1-exec-10] org.hibernate.orm.jdbc.bind [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000101]
+16:41:23.156 DEBUG [http-nio-auto-1-exec-10] org.hibernate.SQL [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - delete from binary_contents where id=?
+16:41:23.156 TRACE [http-nio-auto-1-exec-10] org.hibernate.orm.jdbc.bind [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - binding parameter (1:UUID) <- [00000000-0000-0000-0000-000000000001]
+16:41:23.160 INFO  [http-nio-auto-1-exec-10] c.s.m.d.controller.UserController [ 037a072d-4d49-4fd8-8fd4-2c71ecc82273 | DELETE |
+        /api/users/00000000-0000-0000-0000-000000000101 ] - [User Deleted / id: 00000000-0000-0000-0000-000000000101]
+16:41:23.197 INFO  [http-nio-auto-1-exec-1] c.s.m.d.controller.UserController [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - [Creating User started]
+16:41:23.202 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+16:41:23.204 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (1:VARCHAR) <- [andy@mail.com]
+16:41:23.204 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (2:INTEGER) <- [1]
+16:41:23.209 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - select u1_0.id from users u1_0 where u1_0.username=? fetch first ? rows only
+16:41:23.210 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (1:VARCHAR) <- [andy]
+16:41:23.210 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (2:INTEGER) <- [1]
+16:41:23.217 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - insert into users (created_at,email,password,profile_id,updated_at,username,id) values (?,?,?,?,?,?,?)
+16:41:23.218 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (1:TIMESTAMP_UTC) <- [2025-04-15T07:41:23.213355500Z]
+16:41:23.219 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (2:VARCHAR) <- [andy@mail.com]
+16:41:23.219 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (3:VARCHAR) <- [password]
+16:41:23.219 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (4:UUID) <- [null]
+16:41:23.221 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:23.213355500Z]
+16:41:23.221 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (6:VARCHAR) <- [andy]
+16:41:23.221 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (7:UUID) <- [856adf90-729d-48fe-9a58-8454559e6459]
+16:41:23.222 DEBUG [http-nio-auto-1-exec-1] org.hibernate.SQL [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - insert into user_statuses (created_at,last_active_at,updated_at,user_id,id) values (?,?,?,?,?)
+16:41:23.223 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (1:TIMESTAMP_UTC) <- [2025-04-15T07:41:23.216374400Z]
+16:41:23.224 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (2:TIMESTAMP_UTC) <- [2025-04-15T07:41:23.214365300Z]
+16:41:23.224 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (3:TIMESTAMP_UTC) <- [2025-04-15T07:41:23.216374400Z]
+16:41:23.225 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (4:UUID) <- [856adf90-729d-48fe-9a58-8454559e6459]
+16:41:23.225 TRACE [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - binding parameter (5:UUID) <- [849c4773-ad0a-47c5-91b3-a52fca57e0de]
+16:41:23.227 INFO  [http-nio-auto-1-exec-1] c.s.m.d.controller.UserController [ 02a2cce3-27f3-4b5b-a300-688055eb3ee0 | POST |
+        /api/users ] - [User Created / id: 856adf90-729d-48fe-9a58-8454559e6459]
+16:41:23.252 INFO  [http-nio-auto-1-exec-2] c.s.m.d.controller.UserController [ 908efa11-3d1a-4b32-b618-27a315dbe700 | DELETE |
+        /api/users/0e4b31f8-521c-40c8-a644-f6687f1cadf3 ] - [Deleting User started / id: 0e4b31f8-521c-40c8-a644-f6687f1cadf3]
+16:41:23.254 DEBUG [http-nio-auto-1-exec-2] org.hibernate.SQL [ 908efa11-3d1a-4b32-b618-27a315dbe700 | DELETE |
+        /api/users/0e4b31f8-521c-40c8-a644-f6687f1cadf3 ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id left join user_statuses s1_0 on u1_0.id=s1_0.user_id where u1_0.id=?
+16:41:23.254 TRACE [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind [ 908efa11-3d1a-4b32-b618-27a315dbe700 | DELETE |
+        /api/users/0e4b31f8-521c-40c8-a644-f6687f1cadf3 ] - binding parameter (1:UUID) <- [0e4b31f8-521c-40c8-a644-f6687f1cadf3]
+16:41:23.257 WARN  [http-nio-auto-1-exec-2] c.s.m.d.s.basic.BasicUserService [ 908efa11-3d1a-4b32-b618-27a315dbe700 | DELETE |
+        /api/users/0e4b31f8-521c-40c8-a644-f6687f1cadf3 ] - [Updating User Failed: User with id 0e4b31f8-521c-40c8-a644-f6687f1cadf3 not found]
+16:41:23.295 DEBUG [http-nio-auto-1-exec-3] org.hibernate.SQL [ b37418e7-a360-4acf-ae34-1799547c7fdd | GET |
+        /api/users ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id join user_statuses s1_0 on u1_0.id=s1_0.user_id
+16:41:23.343 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.controllerTests.ChannelControllerTest]: ChannelControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:23.516 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.controllerTests.ChannelControllerTest
+16:41:23.715 INFO  [Test worker] c.s.m.d.c.ChannelControllerTest [  |  |
+         ] - Starting ChannelControllerTest using Java 17.0.11 with PID 32888 (started by soo71 in C:\Users\soo71\github\1-sprint-mission)
+16:41:23.716 INFO  [Test worker] c.s.m.d.c.ChannelControllerTest [  |  |
+         ] - The following 1 profile is active: "test"
+16:41:25.525 INFO  [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping [  |  |
+         ] - Adding welcome page: class path resource [static/index.html]
+16:41:25.958 INFO  [Test worker] o.s.b.t.m.w.SpringBootMockServletContext [  |  |
+         ] - Initializing Spring TestDispatcherServlet ''
+16:41:25.959 INFO  [Test worker] o.s.t.w.s.TestDispatcherServlet [  |  |
+         ] - Initializing Servlet ''
+16:41:25.962 INFO  [Test worker] o.s.t.w.s.TestDispatcherServlet [  |  |
+         ] - Completed initialization in 2 ms
+16:41:26.044 INFO  [Test worker] c.s.m.d.c.ChannelControllerTest [  |  |
+         ] - Started ChannelControllerTest in 2.5 seconds (process running for 50.025)
+16:41:26.296 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Deleting Channel started / id: 5157d870-7aa7-499a-bb98-906c2982f581]
+16:41:26.904 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Creating Public Chanel started]
+16:41:26.910 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Public Channel Created / id: 0a076ecf-2946-4275-883f-c284108aa0f2]
+16:41:26.976 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Updating Public Channel started / id: 5552af1c-b41d-4051-89a4-11c0fae3175d]
+16:41:26.980 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Channel Updated / id: 5552af1c-b41d-4051-89a4-11c0fae3175d]
+16:41:27.060 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Deleting Channel started / id: 5db279d0-dd95-460f-bab0-8081ec95a705]
+16:41:27.061 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Channel Deleted / id: 5db279d0-dd95-460f-bab0-8081ec95a705]
+16:41:27.234 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Creating Private Channel started]
+16:41:27.239 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Private Channel Created / id: 35d0a8eb-9609-4f46-a858-39fc6ed66745]
+16:41:27.375 INFO  [Test worker] c.s.m.d.controller.ChannelController [  |  |
+         ] - [Updating Public Channel started / id: 20402d9a-3340-469b-bdaf-254a951d8904]
+16:41:27.399 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.controllerTests.MessageControllerTest]: MessageControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:27.485 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.controllerTests.MessageControllerTest
+16:41:27.756 INFO  [Test worker] c.s.m.d.c.MessageControllerTest [  |  |
+         ] - Starting MessageControllerTest using Java 17.0.11 with PID 32888 (started by soo71 in C:\Users\soo71\github\1-sprint-mission)
+16:41:27.757 INFO  [Test worker] c.s.m.d.c.MessageControllerTest [  |  |
+         ] - The following 1 profile is active: "test"
+16:41:29.282 INFO  [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping [  |  |
+         ] - Adding welcome page: class path resource [static/index.html]
+16:41:29.522 INFO  [Test worker] o.s.b.t.m.w.SpringBootMockServletContext [  |  |
+         ] - Initializing Spring TestDispatcherServlet ''
+16:41:29.523 INFO  [Test worker] o.s.t.w.s.TestDispatcherServlet [  |  |
+         ] - Initializing Servlet ''
+16:41:29.525 INFO  [Test worker] o.s.t.w.s.TestDispatcherServlet [  |  |
+         ] - Completed initialization in 2 ms
+16:41:29.549 INFO  [Test worker] c.s.m.d.c.MessageControllerTest [  |  |
+         ] - Started MessageControllerTest in 2.037 seconds (process running for 53.53)
+16:41:29.656 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Updating message / id: 56b08fb9-d0f7-459f-a86b-404d8a6a3b5a]
+16:41:29.690 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Updating message / id: bf7a4f05-709f-429c-9a07-10e5e2a7f0d3]
+16:41:29.691 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Message Updated / id: bf7a4f05-709f-429c-9a07-10e5e2a7f0d3]
+16:41:29.768 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Creating Message started]
+16:41:29.770 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Message Created / id:ae2dbaf1-8f98-427e-8bd9-0763c5b467ff]
+16:41:29.787 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Deleting Message / id: 066c0a0c-8862-427a-83af-5a81c71b2227]
+16:41:29.788 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Message Deleted / id:066c0a0c-8862-427a-83af-5a81c71b2227]
+16:41:29.806 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Deleting Message / id: d180659e-25a4-42d2-92d3-4aafb03d352c]
+16:41:29.843 INFO  [Test worker] c.s.m.d.controller.MessageController [  |  |
+         ] - [Creating Message started]
+16:41:29.872 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.controllerTests.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:29.936 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.controllerTests.UserControllerTest
+16:41:30.137 INFO  [Test worker] c.s.m.d.c.UserControllerTest [  |  |
+         ] - Starting UserControllerTest using Java 17.0.11 with PID 32888 (started by soo71 in C:\Users\soo71\github\1-sprint-mission)
+16:41:30.138 INFO  [Test worker] c.s.m.d.c.UserControllerTest [  |  |
+         ] - The following 1 profile is active: "test"
+16:41:31.498 INFO  [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping [  |  |
+         ] - Adding welcome page: class path resource [static/index.html]
+16:41:31.711 INFO  [Test worker] o.s.b.t.m.w.SpringBootMockServletContext [  |  |
+         ] - Initializing Spring TestDispatcherServlet ''
+16:41:31.713 INFO  [Test worker] o.s.t.w.s.TestDispatcherServlet [  |  |
+         ] - Initializing Servlet ''
+16:41:31.714 INFO  [Test worker] o.s.t.w.s.TestDispatcherServlet [  |  |
+         ] - Completed initialization in 1 ms
+16:41:31.730 INFO  [Test worker] c.s.m.d.c.UserControllerTest [  |  |
+         ] - Started UserControllerTest in 1.782 seconds (process running for 55.71)
+16:41:31.810 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [Updating User started / id: eb722c7d-37d3-4c3c-a972-3382ba9cbf3e]
+16:41:31.843 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [Deleting User started / id: b8b77874-0341-45ab-bf6c-1eafd1b29b2b]
+16:41:31.844 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [User Deleted / id: b8b77874-0341-45ab-bf6c-1eafd1b29b2b]
+16:41:31.919 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [Updating User started / id: eab0a873-628f-44dc-aa64-e7ac0a97fb97]
+16:41:31.920 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [User Updated / id: eab0a873-628f-44dc-aa64-e7ac0a97fb97]
+16:41:31.982 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [Deleting User started / id: 9d93b7fb-1da4-4d6d-97a5-d6508336d3d7]
+16:41:32.000 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [Creating User started]
+16:41:32.003 INFO  [Test worker] c.s.m.d.controller.UserController [  |  |
+         ] - [User Created / id: null]
+16:41:32.022 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.repositoryTests.ChannelRepositoryTest]: ChannelRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:32.175 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.repositoryTests.ChannelRepositoryTest
+16:41:32.329 INFO  [Test worker] c.s.m.d.r.ChannelRepositoryTest [  |  |
+         ] - Starting ChannelRepositoryTest using Java 17.0.11 with PID 32888 (started by soo71 in C:\Users\soo71\github\1-sprint-mission)
+16:41:32.330 INFO  [Test worker] c.s.m.d.r.ChannelRepositoryTest [  |  |
+         ] - The following 1 profile is active: "test"
+16:41:32.989 INFO  [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate [  |  |
+         ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:41:33.409 INFO  [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate [  |  |
+         ] - Finished Spring Data repository scanning in 412 ms. Found 6 JPA repository interfaces.
+16:41:33.465 INFO  [Test worker] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor [  |  |
+         ] - Replacing 'dataSource' DataSource bean with embedded version
+16:41:33.577 INFO  [Test worker] o.s.j.d.e.EmbeddedDatabaseFactory [  |  |
+         ] - Starting embedded database: url='jdbc:h2:mem:026edfcd-1978-4e9e-8316-aacba3bfa030;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+16:41:33.713 INFO  [Test worker] o.h.jpa.internal.util.LogHelper [  |  |
+         ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:41:33.762 INFO  [Test worker] o.h.c.i.RegionFactoryInitiator [  |  |
+         ] - HHH000026: Second-level cache disabled
+16:41:33.864 INFO  [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo [  |  |
+         ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+16:41:33.880 WARN  [Test worker] org.hibernate.dialect.Dialect [  |  |
+         ] - HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+16:41:33.881 WARN  [Test worker] org.hibernate.orm.deprecation [  |  |
+         ] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:41:33.887 INFO  [Test worker] o.hibernate.orm.connections.pooling [  |  |
+         ] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@3de75954']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+16:41:34.566 INFO  [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator [  |  |
+         ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:41:34.567 INFO  [Test worker] o.s.o.j.LocalContainerEntityManagerFactoryBean [  |  |
+         ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:41:35.055 INFO  [Test worker] c.s.m.d.r.ChannelRepositoryTest [  |  |
+         ] - Started ChannelRepositoryTest in 2.87 seconds (process running for 59.036)
+16:41:35.095 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - select c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at from channels c1_0 where c1_0.type='PUBLIC'
+16:41:35.127 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.repositoryTests.MessageRepositoryTest]: MessageRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:35.188 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.repositoryTests.MessageRepositoryTest
+16:41:35.215 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into channels (created_at,description,name,type,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.216 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.200404800Z]
+16:41:35.217 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:VARCHAR) <- [ch1]
+16:41:35.217 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Ch 1]
+16:41:35.217 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:NAMED_ENUM) <- [PUBLIC]
+16:41:35.218 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.200404800Z]
+16:41:35.218 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.224 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into users (created_at,email,password,profile_id,updated_at,username,id) values (?,?,?,?,?,?,?)
+16:41:35.226 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.201405300Z]
+16:41:35.226 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:VARCHAR) <- [user@mail.com]
+16:41:35.227 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [password]
+16:41:35.227 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:UUID) <- [null]
+16:41:35.228 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.201405300Z]
+16:41:35.228 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:VARCHAR) <- [User1]
+16:41:35.229 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (7:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.232 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.233 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.233 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.234 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 0]
+16:41:35.234 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.202404Z]
+16:41:35.235 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.202404Z]
+16:41:35.235 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [94272cd4-b37e-4840-a35a-2486ee2e80f7]
+16:41:35.236 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.237 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.238 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.238 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 1]
+16:41:35.238 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.203403700Z]
+16:41:35.239 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.203403700Z]
+16:41:35.239 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [e7428e27-8776-4b8b-b2a0-c48ee2f71e88]
+16:41:35.241 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.242 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.242 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.243 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 2]
+16:41:35.243 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.205403100Z]
+16:41:35.243 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.205403100Z]
+16:41:35.243 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [6d44f5a3-7782-46ef-9fb4-efe3502565ef]
+16:41:35.244 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.245 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.245 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.246 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 3]
+16:41:35.246 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.206404500Z]
+16:41:35.246 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.206404500Z]
+16:41:35.246 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [42f49049-1c92-4514-abc9-789d12e0e697]
+16:41:35.248 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.249 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.249 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.249 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 4]
+16:41:35.249 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.207403400Z]
+16:41:35.250 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.207403400Z]
+16:41:35.250 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [7a417580-218b-4308-b349-103d1e6a4bb6]
+16:41:35.251 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.252 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.252 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.252 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 5]
+16:41:35.252 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.209409300Z]
+16:41:35.253 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.209409300Z]
+16:41:35.253 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [6e0c1a84-c36e-43b2-9ece-ade610eb9952]
+16:41:35.254 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.255 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.255 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.255 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 6]
+16:41:35.255 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.210409400Z]
+16:41:35.256 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.210409400Z]
+16:41:35.256 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [00f02b17-c789-4103-99df-08f22837d2aa]
+16:41:35.259 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.260 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.260 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.260 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 7]
+16:41:35.260 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.211405800Z]
+16:41:35.260 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.211405800Z]
+16:41:35.260 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [08bdc0b5-a673-42cc-a698-3e3627c6b06f]
+16:41:35.262 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.262 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.262 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.262 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 8]
+16:41:35.263 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.212405800Z]
+16:41:35.263 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.212405800Z]
+16:41:35.263 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [e038e35d-7854-4f09-9734-0b54d491bbc1]
+16:41:35.264 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - insert into messages (author_id,channel_id,content,created_at,updated_at,id) values (?,?,?,?,?,?)
+16:41:35.265 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [34d7dec1-0ae3-474a-a75a-96bfb2953363]
+16:41:35.265 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.267 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (3:VARCHAR) <- [Content 9]
+16:41:35.267 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (4:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.212405800Z]
+16:41:35.267 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (5:TIMESTAMP_UTC) <- [2025-04-15T07:41:35.212405800Z]
+16:41:35.267 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (6:UUID) <- [2c84e92a-2b51-4821-a536-84b65aed3c6f]
+16:41:35.283 WARN  [Test worker] org.hibernate.orm.query [  |  |
+         ] - HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+16:41:35.297 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - select m1_0.id,a2_0.message_id,a2_1.id,a2_1.content_type,a2_1.created_at,a2_1.file_name,a2_1.size,a1_0.id,a1_0.created_at,a1_0.email,a1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,a1_0.updated_at,a1_0.username,c1_0.id,c1_0.created_at,c1_0.description,c1_0.name,c1_0.type,c1_0.updated_at,m1_0.content,m1_0.created_at,m1_0.updated_at from messages m1_0 left join users a1_0 on a1_0.id=m1_0.author_id left join user_statuses s1_0 on a1_0.id=s1_0.user_id left join binary_contents p1_0 on p1_0.id=a1_0.profile_id join channels c1_0 on c1_0.id=m1_0.channel_id left join message_attachments a2_0 on m1_0.id=a2_0.message_id left join binary_contents a2_1 on a2_1.id=a2_0.attachment_id where m1_0.channel_id=? and (m1_0.created_at<?) order by m1_0.created_at desc
+16:41:35.301 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (1:UUID) <- [cf200baa-8826-4f88-870e-6579f1ede1d0]
+16:41:35.302 TRACE [Test worker] org.hibernate.orm.jdbc.bind [  |  |
+         ] - binding parameter (2:TIMESTAMP_UTC) <- [2025-04-15T07:39:55.201405300Z]
+16:41:35.325 INFO  [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [  |  |
+         ] - Could not detect default configuration classes for test class [com.spirnt.mission.discodeit.repositoryTests.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:41:35.400 INFO  [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [  |  |
+         ] - Found @SpringBootConfiguration com.spirnt.mission.discodeit.DiscodeitApplication for test class com.spirnt.mission.discodeit.repositoryTests.UserRepositoryTest
+16:41:35.416 DEBUG [Test worker] org.hibernate.SQL [  |  |
+         ] - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,p1_0.id,p1_0.content_type,p1_0.created_at,p1_0.file_name,p1_0.size,s1_0.id,s1_0.created_at,s1_0.last_active_at,s1_0.updated_at,u1_0.updated_at,u1_0.username from users u1_0 left join binary_contents p1_0 on p1_0.id=u1_0.profile_id join user_statuses s1_0 on u1_0.id=s1_0.user_id
+16:41:36.304 WARN  [Test worker] c.s.m.d.s.basic.BasicAuthService [  |  |
+         ] - [Login Failed: Invalid Password(username: alice)]
+16:41:36.333 WARN  [Test worker] c.s.m.d.s.basic.BasicAuthService [  |  |
+         ] - [Login Failed: User with username alice not found]
+16:41:37.316 WARN  [Test worker] c.s.m.d.s.basic.BasicChannelService [  |  |
+         ] - [Deleting Channel Failed: Channel with id 5b395b43-216d-4477-b500-c3eec686db87 not found]
+16:41:37.678 WARN  [Test worker] c.s.m.d.s.basic.BasicChannelService [  |  |
+         ] - [Finding All Channels By UserId Failed: User with id 6d1e4d48-7a8e-44ec-b1f2-7d4a1d4d0281 not found]
+16:41:37.695 WARN  [Test worker] c.s.m.d.s.basic.BasicChannelService [  |  |
+         ] - [Updating Channel Failed: Channel with id 13845a2a-3dd0-407f-af1e-b1d6732f8bb5 not found]
+16:41:38.116 WARN  [Test worker] c.s.m.d.s.basic.BasicMessageService [  |  |
+         ] - [Creating Message Failed: User with id bc732b66-0551-4fa6-ac7e-0683ec604b47 not found]
+16:41:38.125 WARN  [Test worker] c.s.m.d.s.basic.BasicMessageService [  |  |
+         ] - [Deleting Message Failed: Message with id 1a37848a-84ad-44ff-a197-1ee721cb3fee not found]
+16:41:38.161 WARN  [Test worker] c.s.m.d.s.basic.BasicMessageService [  |  |
+         ] - [Updating Message Failed: Message with id ed742a1f-1383-4478-aa69-54bec70ea905 not found]
+16:41:38.214 WARN  [Test worker] c.s.m.d.s.basic.BasicMessageService [  |  |
+         ] - [Finding Messages Failed: Channel with id 6fa519d1-43be-41c2-b1df-fd4e79fecf42 not found]
+16:41:38.461 WARN  [Test worker] c.s.m.d.s.basic.BasicUserService [  |  |
+         ] - [Creating User Failed: Email Anna@mail.com already exists]
+16:41:38.473 WARN  [Test worker] c.s.m.d.s.basic.BasicUserService [  |  |
+         ] - [Creating User Failed: Username Anna already exists]
+16:41:38.498 WARN  [Test worker] c.s.m.d.s.basic.BasicUserService [  |  |
+         ] - [Updating User Failed: User with id 18b0a848-6fff-4cc7-96f3-c8baccf79eb1 not found]
+16:41:38.518 WARN  [Test worker] c.s.m.d.s.basic.BasicUserService [  |  |
+         ] - [Updating User Failed: User with id 7f3ea623-566b-4bc6-a4f2-7e974022e807 not found]
+16:41:38.583 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown [  |  |
+         ] - Commencing graceful shutdown. Waiting for active requests to complete
+16:41:42.916 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown [  |  |
+         ] - Graceful shutdown complete
+16:41:42.942 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [  |  |
+         ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:41:42.952 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource [  |  |
+         ] - HikariPool-1 - Shutdown initiated...
+16:41:42.973 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource [  |  |
+         ] - HikariPool-1 - Shutdown completed.
+16:41:43.007 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [  |  |
+         ] - Closing JPA EntityManagerFactory for persistence unit 'default'

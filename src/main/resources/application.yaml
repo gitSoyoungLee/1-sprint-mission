@@ -1,10 +1,54 @@
+spring:
+  application:
+    name: discodeit
+  profiles:
+    default: prod
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 50MB
+  config:
+    import: optional:file:.env[.properties]
+
+logging:
+  level:
+    root: info
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, loggers # Actuator 엔드포인트 설정
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+  info:
+    env:
+      enabled: true
+info:
+  app:
+    name: Discodeit
+    version: 1.7.0
+  java:
+    version: 17
+  spring:
+    boot:
+      version: 3.4.0
+  storage:
+    type: ${discodeit.storage.type}
+    path: /localStorage
+  multipart:
+    max-file-size: ${spring.servlet.multipart.max-file-size}
+    max-request-size: ${spring.servlet.multipart.max-request-size}
+
 discodeit:
-  repository:
-    type: jcf   # jcf | file
-    file-directory: file-data-map
-    User: ${discodeit.repository.file-directory}/User
-    Channel: ${discodeit.repository.file-directory}/Channel
-    Message: ${discodeit.repository.file-directory}/Message
-    UserStatus: ${discodeit.repository.file-directory}/UserStatus
-    ReadStatus: ${discodeit.repository.file-directory}/ReadStatus
-    BinaryContent: ${discodeit.repository.file-directory}/BinaryContent
+  storage:
+    type: ${STORAGE_TYPE:local}  # local | s3 (기본값: local)
+  s3:
+    access-key: ${AWS_S3_ACCESS_KEY}
+    secret-key: ${AWS_S3_SECRET_KEY}
+    region: ${AWS_S3_REGION}
+    bucket: ${AWS_S3_BUCKET}
+    presigned-url-expiration: ${AWS_S3_PRESIGNED_URL_EXPIRATION:600} # (기본값: 10분)
+

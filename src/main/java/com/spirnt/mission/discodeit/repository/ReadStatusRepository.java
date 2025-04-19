@@ -1,22 +1,21 @@
 package com.spirnt.mission.discodeit.repository;
 
-import com.spirnt.mission.discodeit.enity.ReadStatus;
-
-import java.util.Map;
-import java.util.Optional;
+import com.spirnt.mission.discodeit.entity.ReadStatus;
+import java.util.List;
 import java.util.UUID;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-public interface ReadStatusRepository {
-    void save(ReadStatus readStatus);
+@Repository
+public interface ReadStatusRepository extends JpaRepository<ReadStatus, UUID> {
 
-    void delete(UUID id);
+  @Query("SELECT distinct rs from ReadStatus rs where rs.user.id=:userId")
+  List<ReadStatus> findAllByUserId(UUID userId);
 
-    Optional<ReadStatus> findById(UUID id);
+  List<ReadStatus> findAllByChannelId(UUID channelId);
 
-    Optional<ReadStatus> findByUserIdAndChannelId(UUID userId, UUID channelId);
+  boolean existsByUserIdAndChannelId(UUID userId, UUID channelId);
 
-    Map<UUID, ReadStatus> findAll();
-
-    // 존재 검증
-    boolean existsById(UUID id);
+  void deleteByChannelId(UUID channelId);
 }

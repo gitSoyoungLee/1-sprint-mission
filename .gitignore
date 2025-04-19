@@ -38,4 +38,7 @@ out/
 
 
 *.ser
-uploadedFiles/*
+localStorage/*
+logs/*
+*.env
+.env

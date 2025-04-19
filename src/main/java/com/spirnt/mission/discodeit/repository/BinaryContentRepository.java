@@ -1,20 +1,11 @@
 package com.spirnt.mission.discodeit.repository;
 
-import com.spirnt.mission.discodeit.enity.BinaryContent;
-
-import java.util.Map;
-import java.util.Optional;
+import com.spirnt.mission.discodeit.entity.BinaryContent;
 import java.util.UUID;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface BinaryContentRepository {
-    void save(BinaryContent binaryContent);
+@Repository
+public interface BinaryContentRepository extends JpaRepository<BinaryContent, UUID> {
 
-    void delete(UUID id);
-
-    Optional<BinaryContent> findById(UUID id);
-
-    Map<UUID, BinaryContent> findAll();
-
-    // 존재 검증
-    boolean existsById(UUID id);
 }

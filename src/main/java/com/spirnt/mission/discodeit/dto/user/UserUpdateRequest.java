@@ -1,20 +1,18 @@
 package com.spirnt.mission.discodeit.dto.user;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Getter;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
 
-@Getter
+
 @Schema(description = "수정할 User 정보")
-public class UserUpdateRequest {
+public record UserUpdateRequest(
+    @Size(min = 1, max = 20, message = "이름은 1~20자 사이여야 합니다.")
+    String newUsername,
+    @Email
+    String newEmail,
+    @Size(min = 5, max = 20, message = "비밀번호는 5~20자 사이여야 합니다.")
+    String newPassword
+) {
 
-  private String newUsername;
-  private String newEmail;
-  private String newPassword;
-
-  public UserUpdateRequest(String newUsername, String newEmail,
-      String newPassword) {
-    this.newUsername = newUsername;
-    this.newEmail = newEmail;
-    this.newPassword = newPassword;
-  }
 }

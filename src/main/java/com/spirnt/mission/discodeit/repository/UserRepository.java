@@ -1,26 +1,24 @@
 package com.spirnt.mission.discodeit.repository;
 
-import com.spirnt.mission.discodeit.enity.User;
-
-import java.util.Map;
+import com.spirnt.mission.discodeit.entity.User;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository {
-    // 데이터 삭제
-    void save(User user);
+@Repository
+public interface UserRepository extends JpaRepository<User, UUID> {
 
-    // 데이터 삭제
-    void delete(UUID userId);
 
-    // 객체 찾기
-    Optional<User> findById(UUID userId);
+  @Query("SELECT u FROM User u LEFT JOIN FETCH u.profile JOIN FETCH u.status")
+  List<User> findAllFetchJoin();
 
-    Optional<User> findByName(String name);
 
-    // 저장된 모든 데이터 가져오기
-    Map<UUID, User> findAll();
+  boolean existsByEmail(String email);
 
-    // 존재 검증
-    boolean existsById(UUID userId);
+  boolean existsByUsername(String username);
+
+  Optional<User> findByUsername(String username);
 }

@@ -1,20 +1,16 @@
 package com.spirnt.mission.discodeit.repository;
 
-import com.spirnt.mission.discodeit.enity.UserStatus;
-
-import java.util.Map;
+import com.spirnt.mission.discodeit.entity.UserStatus;
 import java.util.Optional;
 import java.util.UUID;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserStatusRepository {
-    void save(UserStatus userStatus);
+@Repository
+public interface UserStatusRepository extends JpaRepository<UserStatus, UUID> {
 
-    void delete(UUID id);
 
-    Optional<UserStatus> findById(UUID id);
+  boolean existsByUserId(UUID userId);
 
-    Map<UUID, UserStatus> findAll();
-
-    // 존재 검증
-    boolean existsById(UUID id);
+  Optional<UserStatus> findByUserId(UUID userId);
 }

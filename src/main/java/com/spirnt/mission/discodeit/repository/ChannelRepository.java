@@ -1,21 +1,15 @@
 package com.spirnt.mission.discodeit.repository;
 
-import com.spirnt.mission.discodeit.enity.Channel;
-
-import java.util.Map;
-import java.util.Optional;
+import com.spirnt.mission.discodeit.entity.Channel;
+import java.util.List;
 import java.util.UUID;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-public interface ChannelRepository {
-    // 데이터베이스 저장
-    void save(Channel channel);
+@Repository
+public interface ChannelRepository extends JpaRepository<Channel, UUID> {
 
-    void delete(UUID channelId);
-
-    Optional<Channel> findById(UUID channelId);
-
-    Map<UUID, Channel> findAll();
-
-    // 존재 검증
-    boolean existsById(UUID channelId);
+  @Query("SELECT c from Channel c WHERE c.type = 'PUBLIC'")
+  List<Channel> findAllPublic();
 }
